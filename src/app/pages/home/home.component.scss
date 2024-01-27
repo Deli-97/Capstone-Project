@@ -86,7 +86,7 @@ h2{
 
 //MAIN
 main {
-  background: rgb(17, 17, 17);
+  background: var(--nero);
   padding: 30px;
 }
 
@@ -209,5 +209,30 @@ h2{
   .concept {
     margin-right: 20px;
     /* Aggiunge il margine tra il testo e l'immagine su tablet in su */
+  }
+}
+
+// MEDIA QUERY
+
+@media only screen and (max-width: 768px) {
+
+  #phrase1 {
+    font-size: 2.5rem;
+  }
+
+  #phrase2{
+    font-size: 1.2rem;
+  }
+
+  #phrase3{
+    font-size: 1.2rem;
+  }
+
+  h2{
+    font-size: 2.5rem;
+  }
+
+  p{
+    font-size: 1rem;
   }
 }

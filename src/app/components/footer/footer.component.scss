@@ -18,3 +18,15 @@
     font-size: 3.5rem;
   }
 }
+
+
+// MEDIA QUERY
+@media only screen and (max-width: 768px) {
+.f-cont{
+  h1{
+    font-size: 3rem;
+    p{
+      font-size: 1rem;
+    }
+  }
+}}

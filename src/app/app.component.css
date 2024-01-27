@@ -1,1 +1,38 @@
-/*# sourceMappingURL=app.component.css.map */
+.rotate-on-scroll {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 65px;
+  height: 65px;
+  background: rgb(165, 137, 85);
+  transform: rotate(0);
+}
+.rotate-on-scroll p {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+}
+.rotate-on-scroll:after, .rotate-on-scroll:before {
+  content: "";
+  width: 65px;
+  height: 65px;
+  background: rgb(165, 137, 85);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rotate-on-scroll:after {
+  transform: rotate(30deg);
+}
+.rotate-on-scroll:before {
+  transform: rotate(60deg);
+}
+
+a {
+  color: var(--bianco);
+}/*# sourceMappingURL=app.component.css.map */

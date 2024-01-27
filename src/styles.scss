@@ -1,6 +1,6 @@
 :root{
-  --bianco: rgb(230, 230, 230);
-  --nero: rgb(12, 12, 12);
+  --bianco: #f5f5f7;
+  --nero: #1a1a1b;
   --blu:#07252d;
   --footer:#617A75;
 }
@@ -29,29 +29,4 @@ p{
 
 a{
   text-decoration: none;
-}
-
-// MEDIA QUERY
-
-@media only screen and (max-width: 768px) {
-
-  #phrase1 {
-    font-size: 2.5rem;
-  }
-
-  #phrase2{
-    font-size: 1.2rem;
-  }
-
-  #phrase3{
-    font-size: 1.2rem;
-  }
-
-  h2{
-    font-size: 2.5rem;
-  }
-
-  p{
-    font-size: 1.2rem;
-  }
 }

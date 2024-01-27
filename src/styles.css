@@ -1,21 +1,21 @@
-@font-face {
-  font-family: "agathiasstenchy";
-  src: local("agathiasstenchy"), url("/src/assets/font/agathiasstenchy.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+:root {
+  --bianco: #f5f5f7;
+  --nero: #1a1a1b;
+  --blu:#07252d;
+  --footer:#617A75;
 }
-* {
+
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html, body, main, footer {
+html, body {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, p, div {
-  font-family: "agathiasstenchy", sans-serif;
-  color: white;
+p {
+  font-family: "DM Sans", sans-serif;
 }
 
 .menu-container .img-container .img-overlay {
@@ -25,4 +25,8 @@ h1, h2, p, div {
 
 .menu-container .img-container:hover .img-overlay {
   opacity: 1;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
