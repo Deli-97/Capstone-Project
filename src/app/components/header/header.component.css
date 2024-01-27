@@ -1,0 +1,29 @@
+nav {
+  background-color: #07252d;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-collapse {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: rgba(12, 12, 12, 0.9);
+    padding-top: 50px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+  .navbar a {
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-toggler[aria-expanded=true] + .navbar-collapse {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=header.component.css.map */

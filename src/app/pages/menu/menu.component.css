@@ -1,0 +1,26 @@
+h1, h2, p, div, a {
+  color: black;
+}
+
+#menu-page {
+  background-image: url("../../../assets/img/kiwihug-zGZYQQVmXw0-unsplash.jpg"); /* Sostituisci con il percorso reale dell'immagine */
+  background-size: cover;
+}
+
+.section {
+  padding: 40px;
+}
+.section h1 {
+  font-size: 5.5rem;
+}
+
+#menu-list h2, #menu-list p {
+  font-family: "Sometype Mono", monospace;
+}
+#menu-list h2 {
+  font-size: 1.5rem;
+}
+
+.info-allergie {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=menu.component.css.map */

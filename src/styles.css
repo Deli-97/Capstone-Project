@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "agathiasstenchy";
+  src: local("agathiasstenchy"), url("/src/assets/font/agathiasstenchy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body, main, footer {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, p, div {
+  font-family: "agathiasstenchy", sans-serif;
+  color: white;
+}
+
+.menu-container .img-container .img-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-container .img-container:hover .img-overlay {
+  opacity: 1;
+}/*# sourceMappingURL=styles.css.map */

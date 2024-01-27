@@ -1,0 +1,62 @@
+.immagine-sfondo{
+  background-image: url(../../../assets/img/pexels-matheus-bertelli-17294786.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 420px;
+}
+
+.sfondo-principale{
+  background: #D4C9B4;
+  position: relative;
+
+  h1,h2,p{
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+}
+
+.immagine-container{
+  position: relative;
+}
+
+.immagine-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.contatti-container{
+  padding: 60px;
+}
+
+.info-email{
+  margin: 0;
+}
+
+.contatti {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--bianco);
+  z-index: 2;
+}

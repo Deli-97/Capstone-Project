@@ -1,0 +1,135 @@
+<div id="menu-page">
+  <div class="container-fluid">
+    <div class="section">
+      <div>
+        <h1 class="text-end">Pranzo Express</h1>
+      </div>
+      <div>
+        <h2 class="text-end">Dal martedì al giovedì ore 12 - 14
+          <br>
+          tutti i piatti a 15€
+        </h2>
+      </div>
+    </div>
+
+    <!--___MENU LIST___-->
+    <div *ngIf="menuItems.length > 0; else loadingTemplate" class="row">
+      <!-- Colonna sinistra per i primi piatti -->
+      <div class="col-md-4 mb-5 px-4">
+        <ng-container *ngFor="let menuItem of menuItems">
+          <div *ngIf="menuItem.category === 'Primi Piatti'" class="menu-item menu-list">
+            <h2>{{ menuItem.name }}</h2>
+            <p>{{ menuItem.description }}</p>
+          </div>
+        </ng-container>
+      </div>
+
+      <!-- Colonna destra per i secondi piatti -->
+      <div class="col-md-4 mb-5 px-4">
+        <ng-container *ngFor="let menuItem of menuItems">
+          <div *ngIf="menuItem.category === 'Secondi Piatti'" class="menu-item menu-list" >
+            <h2>{{ menuItem.name }}</h2>
+            <p>{{ menuItem.description }}</p>
+          </div>
+        </ng-container>
+      </div>
+
+      <!-- Colonna sotto e a sinistra per i dolci -->
+      <div class="col-md-4 mb-5 px-4">
+        <ng-container *ngFor="let menuItem of menuItems">
+          <div *ngIf="menuItem.category === 'Dolci'" class="menu-item menu-list" >
+            <h2>{{ menuItem.name }}</h2>
+            <p>{{ menuItem.description }}</p>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+    <ng-template #loadingTemplate>
+      <p>Loading menu...</p>
+    </ng-template>
+
+    <!--___TUTTO IL GIORNO___-->
+    <div class="section-2">
+      <div>
+        <h1 class="text-end">Tutto il giorno</h1>
+      </div>
+      <div>
+        <h2 class="text-end">Dal martedì alla domenica</h2>
+      </div>
+    </div>
+
+    <div *ngIf="menuItems.length > 0; else loadingTemplate" class="row">
+      <!-- Colonna sinistra per i primi piatti -->
+      <div class="col-md-4 mb-5 px-4">
+        <ng-container *ngFor="let menuItem of menuItems">
+          <div *ngIf="menuItem.category === 'Primi Piatti-TG'" class="menu-item menu-list">
+            <h2>{{ menuItem.name }}</h2>
+            <p>{{ menuItem.description }}</p>
+          </div>
+        </ng-container>
+      </div>
+
+      <!-- Colonna destra per i secondi piatti -->
+      <div class="col-md-4 mb-5 px-4">
+        <ng-container *ngFor="let menuItem of menuItems">
+          <div *ngIf="menuItem.category === 'Secondi Piatti-TG'" class="menu-item menu-list" >
+            <h2>{{ menuItem.name }}</h2>
+            <p>{{ menuItem.description }}</p>
+          </div>
+        </ng-container>
+      </div>
+
+      <!-- Colonna sotto e a sinistra per i dolci -->
+      <div class="col-md-4 mb-5 px-4">
+        <ng-container *ngFor="let menuItem of menuItems">
+          <div *ngIf="menuItem.category === 'Dolci-TG'" class="menu-item menu-list" >
+            <h2>{{ menuItem.name }}</h2>
+            <p>{{ menuItem.description }}</p>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+    <ng-template #loadingTemplate>
+      <p>Loading menu...</p>
+    </ng-template>
+
+    <!--___DRINK LIST___-->
+
+    <div class="section-3">
+      <div>
+        <h1 class="text-end">Drink List</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-5 px-4">
+        <h2 class="cocktail">Classici 10</h2>
+        <ng-container *ngFor="let drinkItem of drinkItems">
+          <div *ngIf="drinkItem.category === 'classic-drink'" class="menu-item menu-list">
+            <h2>{{ drinkItem.name }}</h2>
+            <p>{{ drinkItem.description }}</p>
+          </div>
+        </ng-container>
+      </div>
+
+      <div class="col-md-6 mb-5 px-4">
+        <h2 class="cocktail">Signature 15</h2>
+        <ng-container *ngFor="let drinkItem of drinkItems">
+          <div *ngIf="drinkItem.category === 'signature-drink'" class="menu-item menu-list" >
+            <h2>{{ drinkItem.name }}</h2>
+            <p>{{ drinkItem.description }}</p>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+    <ng-template #drinkLoadingTemplate>
+      <p>Loading drinks...</p>
+    </ng-template>
+
+    <p>Siete pregati di informare il vostro cameriere di eventuali allergie o intolleranze.</p>
+
+  </div>
+</div>

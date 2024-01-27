@@ -1,0 +1,24 @@
+@charset "UTF-8";
+#eventi-container {
+  background-image: url("../../../assets/img/pexels-matheus-bertelli-16935929.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: white; /* Colore del testo */
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5); /* Sfondo semitrasparente per migliorare la visibilità del testo */
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=eventi.component.css.map */

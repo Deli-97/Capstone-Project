@@ -1,0 +1,35 @@
+
+
+#menu-page {
+  background-image: url('../../../assets/img/kiwihug-zGZYQQVmXw0-unsplash.jpg'); /* Sostituisci con il percorso reale dell'immagine */
+  background-size: cover ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+
+.section, .section-2, .section-3{
+  padding: 40px;
+  font-family: 'Libre Bodoni', serif;
+  color: var(--footer);
+}
+
+.cocktail{
+  font-family: 'Sometype Mono', monospace;
+}
+
+h1{
+  font-size: 4.5rem;
+  font-family: 'Libre Bodoni', serif;
+  color: var(--footer);
+}
+
+.menu-list{
+  h2, p{
+    font-family: 'Sometype Mono', monospace;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+}
+

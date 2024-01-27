@@ -1,0 +1,57 @@
+<div id="eventi-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 info">
+        <h2>Organizza da noi il tuo evento</h2>
+        <p>Contattaci ora e chiedi un preventivo personalizzato secondo le tue esigenze e i tuoi gusti!</p>
+      </div>
+
+      <!--___FORM___-->
+      <div class="col-lg-6">
+        <form (ngSubmit)="submit(f)" #f="ngForm">
+
+          <div class="form-group">
+            <label for="name">Il tuo nome:</label>
+            <input type="text" #nome="ngModel" class="form-control" id="name" name="nome" ngModel
+              placeholder="Inserisci il tuo nome*" required>
+            <div *ngIf="isEmpty(nome)" class="alert alert-warning">
+              Devi inserire il nome
+            </div>
+          </div>
+
+          <div class="form-group" ngModelGroup="authData" #authGroup="ngModelGroup">
+            <label for="email">La tua email:</label>
+            <input type="email" [pattern]="emailRegEx" #email="ngModel" class="form-control" id="email" name="email"
+              ngModel placeholder="Inserisci la tua email*" required>
+            <div *ngIf="isEmail(email)" class="alert alert-warning">
+              La mail non segue il formato richiesto
+            </div>
+            <div *ngIf="isEmpty(email)" class="alert alert-warning">
+              Inserisci la mail
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Il tuo messaggio:</label>
+            <textarea class="form-control" id="message" name="message" ngModel rows="4"
+              placeholder="Inserisci il tuo messaggio*" required></textarea>
+          </div>
+
+          <div class="form-group form-check">
+            <input type="checkbox" #checkbox="ngModel" class="form-check-input" ngModel id="consent" name="checkbox"
+              required>
+            <label class="form-check-label" for="consent">Acconsento al trattamento dei dati personali</label>
+            <div *ngIf="isEmpty(checkbox)" class="alert alert-warning">
+              Devi acconsentire al trattamento dei dati personali
+            </div>
+          </div>
+
+          <button [disabled]="f.invalid" class="btn btn-primary">Contattaci</button>
+          <div *ngIf="f.invalid && f.dirty" class="alert alert-warning">
+            Devi compilare i tuoi dati
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
