@@ -1,5 +1,5 @@
 .galleria-container {
-  background: #D4C9B4;
+  background: var(--nero);
 }
 
 .galleria-container .img-fluid {

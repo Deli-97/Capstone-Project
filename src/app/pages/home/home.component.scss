@@ -29,7 +29,6 @@ img {
 
 #phrase1 {
   font-size: 3.6rem;
-  font-family: 'DM Sans', sans-serif;
   color: var(--bianco);
 }
 
@@ -145,23 +144,6 @@ h2{
   font-size: 1.3rem;
 }
 
-.mobile-image-container {
-
-  margin-bottom: 10px;
-
-  .mobile-image-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--bianco);
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 1; // Mostra il testo senza passaggio del mouse
-  }
-}
-
-
 // GALLERY
 
 .gallery-container{
@@ -173,8 +155,7 @@ h2{
   background-image: url(../../../assets/img/kiwihug-zGZYQQVmXw0-unsplash.jpg);
   background-size: cover;
   color: rgb(165, 137, 85);
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 20px;
 
 
   h3{
@@ -203,16 +184,11 @@ h2{
 
 @media (min-width: 768px) {
 
-  /* Media query per tablet in su */
-
-
   .concept {
     margin-right: 20px;
     /* Aggiunge il margine tra il testo e l'immagine su tablet in su */
   }
 }
-
-// MEDIA QUERY
 
 @media only screen and (max-width: 768px) {
 
@@ -234,5 +210,27 @@ h2{
 
   p{
     font-size: 1rem;
+  }
+
+  .mobile-image-container {
+    position: relative;
+  }
+
+  .mobile-image-text {
+    position: absolute;
+    top: 50%; /* Posiziona il testo a metà dell'altezza dell'immagine */
+    left: 50%; /* Posiziona il testo a metà della larghezza dell'immagine */
+    transform: translate(-50%, -50%); /* Centra il testo correttamente */
+    text-align: center; /* Centra il testo orizzontalmente */
+    color: var(--bianco); /* Assicura che il testo sia visibile sopra le immagini */
+    font-size: 1.2rem; /* Imposta la dimensione del testo secondo le tue esigenze */
+    font-weight: bold; /* Imposta il grassetto se necessario */
+  }
+
+  #foto-galleria{
+    h3{
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
   }
 }

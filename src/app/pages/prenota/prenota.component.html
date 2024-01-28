@@ -1,0 +1,85 @@
+<div class="sfondo-prenota py-5 px-4">
+  <!-- prenota.component.html -->
+
+  <div class="prenota-container">
+
+    <h2 *ngIf="!bookingSuccess">Prenota un tavolo</h2>
+
+    <ng-container *ngIf="!bookingSuccess; else successMessage">
+      <form #reservationForm="ngForm" (ngSubmit)="submitForm(reservationForm)" novalidate>
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" [(ngModel)]="reservation.name" required minlength="3" maxlength="50"
+            placeholder="Inserisci il tuo nome*">
+          <div
+            *ngIf="reservationForm.controls['name']?.hasError('required') && reservationForm.controls['name']?.touched">
+            Il nome è obbligatorio.
+          </div>
+          <div
+            *ngIf="reservationForm.controls['name']?.hasError('minlength') && reservationForm.controls['name']?.touched">
+            Il nome deve essere lungo almeno 3 caratteri.
+          </div>
+          <div
+            *ngIf="reservationForm.controls['name']?.hasError('maxlength') && reservationForm.controls['name']?.touched">
+            Il nome deve essere lungo al massimo 50 caratteri.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Data:</label>
+          <input type="date" id="date" name="date" [(ngModel)]="reservation.date" required [min]="minDateString"
+            [max]="maxDateString">
+          <div
+            *ngIf="reservationForm && reservationForm.controls['date']?.hasError('required') && reservationForm.controls['date']?.touched">
+            La data è obbligatoria.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Ora:</label>
+          <select id="time" name="time" [(ngModel)]="reservation.time" required>
+            <option value="" disabled>Seleziona un'ora</option>
+            <option *ngFor="let time of times" [value]="time">{{ time }}</option>
+          </select>
+          <div
+            *ngIf="reservationForm && reservationForm.controls['time']?.hasError('required') && reservationForm.controls['time']?.touched">
+            L'ora è obbligatoria.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Numero di persone:</label>
+          <input type="number" id="guests" name="guests" [(ngModel)]="reservation.guests" required min="1">
+          <div
+            *ngIf="reservationForm && reservationForm.controls['guests']?.hasError('required') && reservationForm.controls['guests']?.touched">
+            Il numero di persone è obbligatorio.
+          </div>
+          <div
+            *ngIf="reservationForm && reservationForm.controls['guests']?.hasError('min') && reservationForm.controls['guests']?.touched">
+            Il numero di persone deve essere almeno 1.
+          </div>
+        </div>
+
+        <button type="submit" [disabled]="reservationForm.invalid">Prenota</button>
+      </form>
+    </ng-container>
+
+    <ng-template #successMessage>
+      <div>
+        <p>Ciao {{ bookingSummary.name }},</p>
+        <p>Prenotazione effettuata con successo.</p>
+        <div *ngIf="bookingSummary.date && bookingSummary.time">
+          <p>Riepilogo della prenotazione:</p>
+          <ul>
+            <li>Data: {{ bookingSummary.date }}</li>
+            <li>Ora: {{ bookingSummary.time }}</li>
+            <li>Numero di persone: {{ bookingSummary.guests }}</li>
+          </ul>
+          <p>Ti aspettiamo!</p>
+        </div>
+      </div>
+    </ng-template>
+
+  </div>
+
+</div>
