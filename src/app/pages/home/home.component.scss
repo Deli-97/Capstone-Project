@@ -87,7 +87,20 @@ h2{
 main {
   background: var(--nero);
   padding: 30px;
+  overflow-x: hidden;
 }
+
+.img-concept-container {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.img-concept-container.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 h2{
   color: var(--footer);
@@ -109,13 +122,24 @@ h2{
 }
 
 #prova2{
-  background-image: url(../../../assets/img/louis-hansel-0sYLBZjgTTw-unsplash.jpg);
+  background-image: url(../../../assets/img/pexels-cottonbro-studio-3298637.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
 
 /* ______MENU______ */
+
+.img-container {
+  opacity: 0;
+  transform: translateY(50px); /* Inizialmente sposta l'elemento verso il basso */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img-container.show {
+  opacity: 1;
+  transform: translateY(0); /* Quando la classe "show" è presente, sposta l'elemento nella vista */
+}
 
 .menu{
   margin-top: 200px;
@@ -125,7 +149,7 @@ h2{
   width: 100%;
   height: 60vh;
   object-fit: cover; // Scala e ritaglia l'immagine per adattarla al contenitore mantenendo le proporzioni
-  object-position: center top; // Posiziona l'immagine al centro in verticale e in alto in orizzontale
+  object-position: center; // Posiziona l'immagine al centro in verticale e in alto in orizzontale
 }
 
 .img-overlay {
@@ -154,15 +178,10 @@ h2{
 #foto-galleria{
   background-image: url(../../../assets/img/kiwihug-zGZYQQVmXw0-unsplash.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: rgb(165, 137, 85);
   padding: 20px;
-
-
-  h3{
-    font-size: 3rem;
-    margin-bottom: 50px;
-    font-family: 'Libre Bodoni', serif;
-  }
 
   #working-hours{
     font-size: 1.3rem;
@@ -170,6 +189,12 @@ h2{
     font-weight: bold;
     font-family: 'Libre Bodoni', serif;
     margin: 0;
+  }
+
+  h3{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-family: 'Libre Bodoni', serif;
   }
 
   p{
@@ -204,12 +229,28 @@ h2{
     font-size: 1.2rem;
   }
 
+  .concept-container {
+    p {
+      font-size: 1rem;
+    }
+
+  }
+
   h2{
     font-size: 2.5rem;
   }
 
   p{
     font-size: 1rem;
+  }
+
+  .gallery-container{
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .menu{
+    margin-top: 100px;
   }
 
   .mobile-image-container {
@@ -229,8 +270,11 @@ h2{
 
   #foto-galleria{
     h3{
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       margin-bottom: 20px;
+    }
+    p{
+      font-size: 0.9rem;
     }
   }
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 #eventi-container {
   background-image: url("../../../assets/img/pexels-matheus-bertelli-16935929.jpg");
   background-size: cover;
@@ -7,11 +8,13 @@
   margin: 0;
   display: flex;
   align-items: center;
-  color: var(--bianco); /* Colore del testo */
+  color: var(--bianco);
+  /* Colore del testo */
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.6); /* Sfondo semitrasparente per migliorare la visibilità del testo */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Sfondo semitrasparente per migliorare la visibilità del testo */
   border-radius: 10px;
   padding: 20px;
   margin: auto;
@@ -22,19 +25,25 @@
   flex-direction: column;
   align-items: center;
 }
-.info h2, .info p {
+
+.info h2,
+.info p {
   max-width: 400px;
   text-align: center;
   font-family: "DM Sans", sans-serif;
 }
+
 .info h2 {
   font-weight: bold;
 }
 
-input, textarea {
-  background: rgba(255, 255, 255, 0.21); /* Sfondo bianco con opacità 0.2 */
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.21);
+  /* Sfondo bianco con opacità 0.2 */
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px); /* Effetto blur con raggio 5px */
+  backdrop-filter: blur(5px);
+  /* Effetto blur con raggio 5px */
   outline: none;
   margin-bottom: 8px;
   max-width: 450px;
@@ -50,16 +59,21 @@ button {
   cursor: pointer;
   transition: var(--nero) 0.3s, color 0.3s;
 }
+
 button:disabled {
   background-color: transparent;
   border: 1px solid var(--bianco);
 }
+
 button:hover {
   background-color: var(--bianco);
   border: 1px solid var(--bianco);
   color: var(--nero);
 }
+
 button:active {
   background-color: #d6d6d6;
   color: #333333;
-}/*# sourceMappingURL=eventi.component.css.map */
+}
+
+/*# sourceMappingURL=eventi.component.css.map */

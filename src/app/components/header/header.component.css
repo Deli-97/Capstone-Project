@@ -3,11 +3,11 @@ nav {
   color: var(--bianco);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   transition: background-color 0.5s linear;
 }
 
-.ciao #central {
+.central-container #central {
   font-family: "Libre Bodoni", serif;
   font-size: 2.8rem;
 }
@@ -23,7 +23,7 @@ a {
   font-family: "Libre Bodoni", serif;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbar .navbar-collapse {
     position: fixed;
     top: 56px;
@@ -37,10 +37,14 @@ a {
     transition: transform 0.3s ease-in-out;
     z-index: 1;
   }
+
   .navbar a {
     font-size: 1.5rem;
   }
-  .navbar .navbar-toggler[aria-expanded=true] + .navbar-collapse {
+
+  .navbar .navbar-toggler[aria-expanded=true]+.navbar-collapse {
     transform: translateY(0);
   }
-}/*# sourceMappingURL=header.component.css.map */
+}
+
+/*# sourceMappingURL=header.component.css.map */

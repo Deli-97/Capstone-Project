@@ -66,3 +66,26 @@ button {
     color: #333333;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #eventi-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .info {
+    h2,
+    p {
+      max-width: 100%; /* Riduci la larghezza massima */
+    }
+  }
+
+  input,
+  textarea {
+    max-width: 100%; /* Riduci la larghezza massima */
+  }
+}

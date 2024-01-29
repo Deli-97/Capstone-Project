@@ -2,19 +2,24 @@
   color: var(--bianco);
   background-color: var(--footer);
 }
+
 .f-cont h1 {
   font-family: "Libre Bodoni", serif;
 }
+
 .f-cont p {
   font-family: "DM Sans", sans-serif;
 }
+
 .f-cont h5 {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
 }
+
 .f-cont a {
   color: var(--bianco);
 }
+
 .f-cont h1 {
   font-size: 3.5rem;
 }
@@ -23,7 +28,10 @@
   .f-cont h1 {
     font-size: 3rem;
   }
+
   .f-cont h1 p {
     font-size: 1rem;
   }
-}/*# sourceMappingURL=footer.component.css.map */
+}
+
+/*# sourceMappingURL=footer.component.css.map */

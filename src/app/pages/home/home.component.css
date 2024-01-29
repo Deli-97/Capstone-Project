@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .video-background {
   position: absolute;
   width: 100%;
@@ -10,7 +11,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hero-section {
@@ -19,6 +20,7 @@
   overflow: hidden;
   height: 100vh;
 }
+
 .hero-section a {
   color: var(--bianco);
   text-decoration: none;
@@ -50,16 +52,24 @@ h2 {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-10px);
   }
+
   60% {
     transform: translateY(-5px);
   }
 }
+
 .container-cta.show {
   opacity: 1;
   transform: translateY(0);
@@ -79,6 +89,18 @@ h2 {
 main {
   background: var(--nero);
   padding: 30px;
+  overflow-x: hidden;
+}
+
+.img-concept-container {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.img-concept-container.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 h2 {
@@ -93,6 +115,7 @@ h2 {
   flex-direction: column;
   margin-top: 80px;
 }
+
 .concept-container p {
   font-size: 1.3rem;
   color: var(--bianco);
@@ -106,6 +129,23 @@ h2 {
 }
 
 /* ______MENU______ */
+.menu-container {
+  overflow: hidden;
+}
+
+.img-container {
+  opacity: 0;
+  transform: translateY(50px);
+  /* Inizialmente sposta l'elemento verso il basso */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img-container.show {
+  opacity: 1;
+  transform: translateY(0);
+  /* Quando la classe "show" è presente, sposta l'elemento nella vista */
+}
+
 .menu {
   margin-top: 200px;
 }
@@ -114,9 +154,9 @@ h2 {
   width: 100%;
   height: 60vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center top;
-     object-position: center top;
+  object-position: center top;
 }
 
 .img-overlay {
@@ -146,11 +186,13 @@ h2 {
   color: rgb(165, 137, 85);
   padding: 20px;
 }
+
 #foto-galleria h3 {
   font-size: 3rem;
   margin-bottom: 50px;
   font-family: "Libre Bodoni", serif;
 }
+
 #foto-galleria #working-hours {
   font-size: 1.3rem;
   font-style: italic;
@@ -158,9 +200,11 @@ h2 {
   font-family: "Libre Bodoni", serif;
   margin: 0;
 }
+
 #foto-galleria p {
   font-size: 1.3rem;
 }
+
 #foto-galleria p a {
   color: rgb(165, 137, 85);
 }
@@ -171,37 +215,54 @@ h2 {
     /* Aggiunge il margine tra il testo e l'immagine su tablet in su */
   }
 }
+
 @media only screen and (max-width: 768px) {
   #phrase1 {
     font-size: 2.5rem;
   }
+
   #phrase2 {
     font-size: 1.2rem;
   }
+
   #phrase3 {
     font-size: 1.2rem;
   }
+
   h2 {
     font-size: 2.5rem;
   }
+
   p {
     font-size: 1rem;
   }
+
   .mobile-image-container {
     position: relative;
   }
+
   .mobile-image-text {
     position: absolute;
-    top: 50%; /* Posiziona il testo a metà dell'altezza dell'immagine */
-    left: 50%; /* Posiziona il testo a metà della larghezza dell'immagine */
-    transform: translate(-50%, -50%); /* Centra il testo correttamente */
-    text-align: center; /* Centra il testo orizzontalmente */
-    color: var(--bianco); /* Assicura che il testo sia visibile sopra le immagini */
-    font-size: 1.2rem; /* Imposta la dimensione del testo secondo le tue esigenze */
-    font-weight: bold; /* Imposta il grassetto se necessario */
+    top: 50%;
+    /* Posiziona il testo a metà dell'altezza dell'immagine */
+    left: 50%;
+    /* Posiziona il testo a metà della larghezza dell'immagine */
+    transform: translate(-50%, -50%);
+    /* Centra il testo correttamente */
+    text-align: center;
+    /* Centra il testo orizzontalmente */
+    color: var(--bianco);
+    /* Assicura che il testo sia visibile sopra le immagini */
+    font-size: 1.2rem;
+    /* Imposta la dimensione del testo secondo le tue esigenze */
+    font-weight: bold;
+    /* Imposta il grassetto se necessario */
   }
+
   #foto-galleria h3 {
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
-}/*# sourceMappingURL=home.component.css.map */
+}
+
+/*# sourceMappingURL=home.component.css.map */

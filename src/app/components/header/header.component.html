@@ -4,13 +4,13 @@
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" (click)="closeNavbar()">
       <div class="navbar-nav mx-auto">
-        <a routerLink="/" class="nav-link px-2 me-5 ">Home</a>
-        <a routerLink="menu" class="nav-link px-2 me-5 ">Menù</a>
-        <a routerLink="prenota" class="nav-link px-2 ">Prenota</a>
+        <a routerLink="/" class="nav-link px-2 me-5 " >Home</a>
+        <a routerLink="menu" class="nav-link px-2 me-5 " >Menù</a>
+        <a routerLink="prenota" class="nav-link px-2 " >Prenota</a>
       </div>
-      <div class="d-none d-lg-flex align-items-center d-sm-none ciao">
+      <div class="d-none d-lg-flex align-items-center d-sm-none central-container">
         <a id="central" routerLink="/">Central</a>
       </div>
       <div class="navbar-nav mx-auto">

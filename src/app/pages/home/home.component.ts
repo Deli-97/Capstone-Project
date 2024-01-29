@@ -6,10 +6,43 @@ import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
+
+  isScrolledToConcept = false;
+  constructor(private el: ElementRef, private renderer: Renderer2) { }
+
   ngOnInit(): void {
     const phrases = document.querySelectorAll<HTMLElement>('.fade');
     this.showPhrases(phrases, 0);
+
+    const imgConceptContainer = this.el.nativeElement.querySelector('.img-concept-container');
+    if (imgConceptContainer) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !imgConceptContainer.classList.contains('show')) {
+            imgConceptContainer.classList.add('show');
+          }
+        });
+      });
+
+      observer.observe(imgConceptContainer);
+    }
+
+    // Codice per le immagini
+    const imgContainers = this.el.nativeElement.querySelectorAll('.img-container');
+    if (imgContainers) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !entry.target.classList.contains('show')) {
+            entry.target.classList.add('show');
+          }
+        });
+      });
+
+      imgContainers.forEach((imgContainer: Element) => {
+        observer.observe(imgContainer);
+      });
+    }
   }
 
   private showPhrases(phrases: NodeListOf<HTMLElement> | NodeList, index: number): void {
@@ -25,6 +58,8 @@ export class HomeComponent implements OnInit{
       }
     }
   }
+
+
 }
 
 @Directive({
@@ -32,7 +67,7 @@ export class HomeComponent implements OnInit{
 })
 export class ImageHoverDirective {
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  constructor(private el: ElementRef, private renderer: Renderer2) { }
 
   @HostListener('mouseenter') onMouseEnter() {
     this.animateOverlay(true);
