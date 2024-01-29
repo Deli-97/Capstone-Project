@@ -12,27 +12,22 @@
   background-color: var(--bianco);
   font-family: "DM Sans", sans-serif;
 }
-
 .prenota-container h2 {
   text-align: center;
   color: #343a40;
 }
-
 .prenota-container form {
   display: flex;
   flex-direction: column;
 }
-
 .prenota-container form .form-group {
   margin-bottom: 20px;
 }
-
 .prenota-container form .form-group label {
   font-size: 14px;
   margin-bottom: 5px;
   color: #495057;
 }
-
 .prenota-container form .form-group input,
 .prenota-container form .form-group select {
   width: 100%;
@@ -42,18 +37,15 @@
   border-radius: 4px;
   transition: border-color 0.3s ease-in-out;
 }
-
 .prenota-container form .form-group input:focus,
 .prenota-container form .form-group select:focus {
   border-color: #007bff;
 }
-
 .prenota-container form .form-group div {
   color: #dc3545;
   font-size: 12px;
   margin-top: 5px;
 }
-
 .prenota-container form button {
   background-color: #007bff;
   color: var(--bianco);
@@ -64,11 +56,9 @@
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
-
 .prenota-container form button:hover {
   background-color: #0056b3;
 }
-
 .prenota-container form button:disabled {
   background-color: #bdc3c7;
   cursor: not-allowed;
@@ -76,9 +66,6 @@
 
 @media only screen and (max-width: 768px) {
   .prenota-container h2 {
-    font-size: 1.5rem;
-    /* Modifica la dimensione del testo dell'intestazione */
+    font-size: 1.5rem; /* Modifica la dimensione del testo dell'intestazione */
   }
-}
-
-/*# sourceMappingURL=prenota.component.css.map */
+}/*# sourceMappingURL=prenota.component.css.map */

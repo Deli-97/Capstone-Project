@@ -1,17 +1,14 @@
 :root {
   --bianco: #f5f5f7;
   --nero: #1a1a1b;
-  --footer: #617A75;
+  --footer:#617A75;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
 }
@@ -31,6 +28,4 @@ p {
 
 a {
   text-decoration: none;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

@@ -5,7 +5,7 @@
 .galleria-container .img-fluid {
   overflow: hidden;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   transition: all 0.3s ease;
 }
 
@@ -15,10 +15,8 @@
 
 .object-fit-cover {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   background-position: center center;
   width: 250px;
   height: 100%;
-}
-
-/*# sourceMappingURL=galleria.component.css.map */
+}/*# sourceMappingURL=galleria.component.css.map */

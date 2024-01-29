@@ -37,14 +37,10 @@ a {
     transition: transform 0.3s ease-in-out;
     z-index: 1;
   }
-
   .navbar a {
     font-size: 1.5rem;
   }
-
-  .navbar .navbar-toggler[aria-expanded=true]+.navbar-collapse {
+  .navbar .navbar-toggler[aria-expanded=true] + .navbar-collapse {
     transform: translateY(0);
   }
-}
-
-/*# sourceMappingURL=header.component.css.map */
+}/*# sourceMappingURL=header.component.css.map */

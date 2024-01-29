@@ -1,7 +1,7 @@
 // prenota.component.ts
 
 import { Component, ViewChild } from '@angular/core';
-import { NgForm, NgModel } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 
 type Reservation = {
   name: string;
