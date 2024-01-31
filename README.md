@@ -17,6 +17,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Screenshots
 <img width="480" alt="Screenshot 2024-01-31 112803" src="https://github.com/Deli-97/Capstone-Project/assets/140197572/7324d748-eaf9-46d1-9709-2253586bd278">
+<img width="480" alt="Screenshot 2024-01-31 112928" src="https://github.com/Deli-97/Capstone-Project/assets/140197572/10194845-0fd8-496b-ae82-97420f421d2c">
+<img width="480" alt="Screenshot 2024-01-31 113013" src="https://github.com/Deli-97/Capstone-Project/assets/140197572/b5f18364-4c96-4c20-afd6-f67436c08dfa">
+<img width="480" alt="Screenshot 2024-01-31 113057" src="https://github.com/Deli-97/Capstone-Project/assets/140197572/c039747f-7b50-4371-af8c-e5c81a90e6d7">
 
 
 ## Running unit tests
