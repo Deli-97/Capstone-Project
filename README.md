@@ -1,6 +1,6 @@
 # Sito Web per Ristorante 🍽‍️
 
-Sito web realizzato con [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10, Bootstrap 5.3, Sass, come Capstone Project per Epicode School. 👨‍💻
+Sito web realizzato con [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10, Bootstrap 5.3, Scss, come Capstone Project per Epicode School. 👨‍💻
 
 ## Funzionalità ✨
 
