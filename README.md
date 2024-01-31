@@ -15,9 +15,9 @@ Sito web realizzato con [Angular CLI](https://github.com/angular/angular-cli) ve
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Build
+## Screenshots
+<img width="959" alt="Screenshot 2024-01-31 112803" src="https://github.com/Deli-97/Capstone-Project/assets/140197572/7324d748-eaf9-46d1-9709-2253586bd278">
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
