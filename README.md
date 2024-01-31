@@ -1,15 +1,19 @@
-<<<<<<< HEAD
-# ProgettoAngular
+# Sito Web per Ristorante
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+Sito web realizzato con [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10, Bootstrap 5.3, Sass, come Capstone Project per Epicode School.
+
+## Funzionalità
+
+✦ HOME - panoramica del ristorante  
+✦ MENU - panoramica del menu con diverse formule  
+✦ PRENOTA - form di prenotazione tavolo  
+✦ EVENTI - form di prenotazione eventi (es. cene aziendali, feste di compleanno...)  
+✦ GALLERIA - alcune foto del cibo e dei drink  
+✦ CONTATTI - contatti, orari, indirizzo, icone social (footer)
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
