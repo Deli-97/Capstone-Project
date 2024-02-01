@@ -257,6 +257,10 @@ h2{
     position: relative;
   }
 
+  .mobile-image {
+    height: 50vh; /* Altezza ridotta per le immagini in mobile */
+  }
+
   .mobile-image-text {
     position: absolute;
     top: 50%; /* Posiziona il testo a metà dell'altezza dell'immagine */
