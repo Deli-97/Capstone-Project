@@ -258,7 +258,7 @@ h2{
   }
 
   .mobile-image {
-    height: 50vh; /* Altezza ridotta per le immagini in mobile */
+    height: 46vh; /* Altezza ridotta per le immagini in mobile */
   }
 
   .mobile-image-text {
@@ -268,7 +268,7 @@ h2{
     transform: translate(-50%, -50%); /* Centra il testo correttamente */
     text-align: center; /* Centra il testo orizzontalmente */
     color: var(--bianco); /* Assicura che il testo sia visibile sopra le immagini */
-    font-size: 1.2rem; /* Imposta la dimensione del testo secondo le tue esigenze */
+    font-size: 1.6rem; /* Imposta la dimensione del testo secondo le tue esigenze */
     font-weight: bold; /* Imposta il grassetto se necessario */
   }
 
