@@ -45,7 +45,7 @@ a {
     height: 50px; /* Riduci l'altezza */
   }
   .rotate-on-scroll p {
-    font-size: 12px; /* Riduci la dimensione del testo */
+    font-size: 13px; /* Riduci la dimensione del testo */
   }
   .rotate-on-scroll:after, .rotate-on-scroll:before {
     width: 50px; /* Riduci la larghezza */

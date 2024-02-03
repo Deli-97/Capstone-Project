@@ -7,7 +7,10 @@
 }
 
 .section, .section-2, .section-3 {
-  padding: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 10px;
   font-family: "Libre Bodoni", serif;
   color: var(--footer);
 }
